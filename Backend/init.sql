@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS lab_canciones;
+USE lab_canciones;
+
+CREATE TABLE IF NOT EXISTS songs (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(120) NOT NULL,
+  artista VARCHAR(120) NOT NULL
+);

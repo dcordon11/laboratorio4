@@ -1,0 +1,181 @@
+.app {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 3rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.hero {
+  background: linear-gradient(120deg, #0f1f35 0%, #112947 55%, #123458 100%);
+  border: 1px solid #244c79;
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 20px 35px rgba(5, 12, 22, 0.45);
+}
+
+.eyebrow {
+  color: #8cc8ff;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  font-size: 0.78rem;
+  margin-bottom: 0.25rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(1.7rem, 4vw, 2.6rem);
+  color: #eaf5ff;
+}
+
+.hero-text {
+  margin-top: 0.5rem;
+  color: #b9d8f5;
+  max-width: 58ch;
+}
+
+.panel {
+  background: rgba(9, 22, 38, 0.86);
+  border: 1px solid #1f3f65;
+  border-radius: 16px;
+  padding: 1.2rem;
+}
+
+.panel h2 {
+  margin: 0 0 0.85rem;
+  color: #d9efff;
+}
+
+.song-form,
+.search-controls {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+input,
+button {
+  border-radius: 10px;
+  border: 1px solid #2f5682;
+  background: #0d2038;
+  color: #edf7ff;
+  font-size: 0.98rem;
+  padding: 0.7rem 0.82rem;
+}
+
+input::placeholder {
+  color: #8fadc9;
+}
+
+input:focus,
+button:focus {
+  outline: 2px solid #5cb7ff;
+  outline-offset: 1px;
+}
+
+button {
+  cursor: pointer;
+  background: linear-gradient(120deg, #1b6aa8, #1a4e8b);
+  border-color: #3a8ac6;
+  font-weight: 600;
+}
+
+button:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+button:disabled {
+  opacity: 0.58;
+  cursor: not-allowed;
+}
+
+.search-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.table-wrap {
+  margin-top: 0.8rem;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #23466f;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #0a1a2d;
+}
+
+th,
+td {
+  padding: 0.84rem;
+  text-align: left;
+  border-bottom: 1px solid #163455;
+}
+
+thead {
+  background: #14365d;
+}
+
+th {
+  color: #d8eeff;
+}
+
+tbody tr:hover {
+  background: #0f2743;
+}
+
+.empty-row {
+  text-align: center;
+  color: #9dbfda;
+  padding: 1rem;
+}
+
+.pagination {
+  margin-top: 0.95rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.pagination span {
+  color: #cbe5ff;
+  font-weight: 600;
+}
+
+.feedback {
+  margin-top: 0.7rem;
+  margin-bottom: 0;
+  font-size: 0.92rem;
+}
+
+.feedback.error {
+  color: #ff9e9e;
+}
+
+.feedback.success {
+  color: #91f0c0;
+}
+
+.loading {
+  text-align: center;
+  margin: 0;
+  padding: 0.85rem;
+  color: #a7cae9;
+}
+
+@media (max-width: 620px) {
+  .app {
+    padding-top: 1rem;
+  }
+
+  .panel {
+    padding: 1rem;
+  }
+}
